@@ -19,26 +19,23 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 ## about me
-I am a fourth year PhD student of [Quantum Information and Computation Initiative](https://qici.weebly.com) led by [Prof. Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html) at The University of Hong Kong. My research field is quantum information and quantum foundations. I received my BEng degree in computer science at Zhejing University.
+I am a fourth year PhD student of [Quantum Information and Computation Initiative](https://qici.weebly.com) led by [Prof. Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html) at The University of Hong Kong. My research field is quantum information and quantum foundations. I received my BEng degree in computer science at Zhejiang University.
 
 ## research
 <ul>
 {% for paper in site.data.papers %}
   <li>
-    {% if paper.url %}
-      <a href="{{ paper.url }}">
+    {% if paper.arxiv %}
+      <a href="https://arxiv.org/abs/{{ paper.arxiv }}">
         <b>{{ paper.title }}</b>
       </a>
     {% else %}
       <b>{{ paper.title }}</b>
     {% endif %}
-    --
+    —
     {% for author in paper.authors %}
-      {% if forloop.last %}
-        {{ author }}
-      {% else %}
-        {{ author }},
-      {% endif %}
+      {% if author == "Zixuan Liu" %}<b>{{ author }}</b>{% else %}{{ author }}{% endif %}
+      {%- unless forloop.last %}, {% endunless -%}
     {% endfor %}
     <br>
     <i>{{ paper.journal }}</i>
