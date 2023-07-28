@@ -1,6 +1,6 @@
 - title: Quantum operations with indefinite time direction
   authors: [Giulio Chiribella, Zixuan Liu]
-  journal: Communications Physics
+  journal: Communication Physics 5, 190 (2022)
   doi: https://doi.org/10.1038/s42005-022-00967-3
   comment:
   arxiv: 2012.03859
@@ -12,9 +12,9 @@
   comment:
   arxiv: 2210.17046
 
-- title: Quantum communication through devices in an indefinite input-output direction
+- title: Quantum communication through devices with indefinite input-output direction
   authors: [Zixuan Liu, Ming Yang, Giulio Chiribella]
-  journal:
-  doi:
+  journal: New J. Phys. 25 043017 (2023)
+  doi: https://doi.org/10.1088/1367-2630/acc8f2
   comment:
   arxiv: 2212.08265

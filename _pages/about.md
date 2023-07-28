@@ -25,22 +25,31 @@ I am a fourth year PhD student of [Quantum Information and Computation Initiativ
 <ul>
 {% for paper in site.data.papers %}
   <li>
-    {% if paper.arxiv %}
-      <a href="https://arxiv.org/abs/{{ paper.arxiv }}">
+    {% if paper.journal %}
+      <a href="{{ paper.doi }}">
         <b>{{ paper.title }}</b>
       </a>
     {% else %}
-      <b>{{ paper.title }}</b>
+      <a href="https://arxiv.org/abs/{{ paper.arxiv }}">
+        <b>{{ paper.title }}</b>
+      </a>
     {% endif %}
     —
     {% for author in paper.authors %}
-      {% if author == "Zixuan Liu" %}<b>{{ author }}</b>{% else %}{{ author }}{% endif %}
+      {% if author == "Zixuan Liu" %}<u>{{ author }}</u>{% else %}{{ author }}{% endif %}
       {%- unless forloop.last %}, {% endunless -%}
     {% endfor %}
-    <br>
-    <i>{{ paper.journal }}</i>
-    {% if paper.comment %}
-      ({{ paper.comment }})
+    {% if paper.journal %}
+      <br>
+      <i>{{ paper.journal }}</i>
+      {% if paper.comment %}
+        ({{ paper.comment }})
+      {% endif %}
+    {% else %}
+      {% if paper.comment %}
+        <br>
+        ({{ paper.comment }})
+      {% endif %}
     {% endif %}
   </li>
 {% endfor %}
