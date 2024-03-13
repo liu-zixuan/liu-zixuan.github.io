@@ -19,41 +19,35 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 ## about me
-I am a fourth year PhD student of [Quantum Information and Computation Initiative](https://qici.weebly.com) led by [Prof. Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html) at The University of Hong Kong. My research field is quantum information and quantum foundations. I received my BEng degree in computer science at Zhejiang University.
+I will be joining [Centre for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be) at the Université libre de Bruxelles as a postdoctoral researcher starting in September 2024.
+I work on quantum information and quantum foundations. 
+I received my PhD at the University of Hong Kong, supervised by [Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html). 
+
+My first name "Zi Xuan" is pronounced in English approximately as "zuh shwen."
 
 ## research
-<ul>
+[[arXiv]](http://arxiv.org/a/liu_z_19) [[Google scholar]](https://scholar.google.com/citations?user=cdxZIzQAAAAJ).
+
 {% for paper in site.data.papers %}
-  <li>
-    {% if paper.journal %}
-      <a href="{{ paper.doi }}">
-        <b>{{ paper.title }}</b>
-      </a>
-    {% else %}
-      <a href="https://arxiv.org/abs/{{ paper.arxiv }}">
-        <b>{{ paper.title }}</b>
-      </a>
-    {% endif %}
-    —
-    {% for author in paper.authors %}
-      {% if author == "Zixuan Liu" %}<u>{{ author }}</u>{% else %}{{ author }}{% endif %}
-      {%- unless forloop.last %}, {% endunless -%}
-    {% endfor %}
-    {% if paper.journal %}
-      <br>
-      <i>{{ paper.journal }}</i>
-      {% if paper.comment %}
-        ({{ paper.comment }})
-      {% endif %}
-    {% else %}
-      {% if paper.comment %}
-        <br>
-        ({{ paper.comment }})
-      {% endif %}
-    {% endif %}
-  </li>
+  <p>
+  <b>⚛ {{ paper[1].title }}</b>
+  {% if paper[1].arxiv -%}
+    <a href="https://arxiv.org/abs/{{ paper[1].arxiv }}">[arXiv:{{ paper[1].arxiv }}]</a>
+  {%- endif -%}
+  <br>
+  {%- for author in paper[1].authors -%}
+    {% if author == "Zixuan Liu" %}<u>{{ author }}</u>{% else %}{{ author }}{% endif %}
+    {%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+  {%- if paper[1].journal -%}
+    , <i><a href="{{ paper[1].doi }}">{{ paper[1].journal }}</a></i>
+  {%- endif -%}
+  {%- if paper[1].comment -%}
+    <br>
+    ({{ paper[1].comment }})
+  {%- endif -%}
+  </p>
 {% endfor %}
-</ul>
 
 ## contact
 Email: <{{ site.email }}>
