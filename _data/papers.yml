@@ -1,20 +1,31 @@
-- title: Quantum operations with indefinite time direction
+chiribella2022quantum:
+  title: Quantum operations with indefinite time direction
   authors: [Giulio Chiribella, Zixuan Liu]
-  journal: Communication Physics 5, 190 (2022)
+  journal: Commun. Phys. 5, 190 (2022)
   doi: https://doi.org/10.1038/s42005-022-00967-3
   comment:
   arxiv: 2012.03859
 
-- title: Experimental demonstration of input-output indefiniteness in a single quantum device
+guo2022experimental:
+  title: Experimental demonstration of input-output indefiniteness in a single quantum device
   authors: [Yu Guo, Zixuan Liu, Hao Tang, Xiao-Min Hu, Bi-Heng Liu, Yun-Feng Huang, Chuan-Feng Li, Guang-Can Guo, Giulio Chiribella]
-  journal:
-  doi:
+  journal: Phys. Rev. Lett. 132, 160201 (2024)
+  doi: https://doi.org/10.1103/PhysRevLett.132.160201
   comment:
   arxiv: 2210.17046
 
-- title: Quantum communication through devices with indefinite input-output direction
+liu2023quantum:
+  title: Quantum communication through devices with indefinite input-output direction
   authors: [Zixuan Liu, Ming Yang, Giulio Chiribella]
-  journal: New J. Phys. 25 043017 (2023)
+  journal: New J. Phys. 25, 043017 (2023)
   doi: https://doi.org/10.1088/1367-2630/acc8f2
   comment:
   arxiv: 2212.08265
+
+liu2024tsirelson:
+  title: Tsirelson bounds for quantum correlations with indefinite causal order
+  authors: [Zixuan Liu, Giulio Chiribella]
+  journal:
+  doi:
+  comment:
+  arxiv: 2403.02749
