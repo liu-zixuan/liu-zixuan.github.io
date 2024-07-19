@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 ## about me
-I will be joining [Centre for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be) at the Université libre de Bruxelles as a postdoctoral researcher starting in September 2024.
+I am a postdoctoral researcher at [Centre for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be) at the Université libre de Bruxelles.
 I work on quantum information and quantum foundations. 
 I received my PhD at the University of Hong Kong, supervised by [Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html). 
 
