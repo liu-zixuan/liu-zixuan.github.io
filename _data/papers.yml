@@ -22,10 +22,10 @@ liu2023quantum:
   comment:
   arxiv: 2212.08265
 
-liu2024tsirelson:
+liu2025tsirelson:
   title: Tsirelson bounds for quantum correlations with indefinite causal order
   authors: [Zixuan Liu, Giulio Chiribella]
-  journal:
-  doi:
+  journal: Nat. Commun. 16, 3314 (2025)
+  doi: https://doi.org/10.1038/s41467-025-58508-9
   comment:
   arxiv: 2403.02749
