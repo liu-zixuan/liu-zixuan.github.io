@@ -19,11 +19,8 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 ## about me
-I am a postdoctoral researcher at [Centre for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be) at the Université libre de Bruxelles.
-I work on quantum information and quantum foundations. 
+I am a postdoctoral researcher at [Centre for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be) at the Université libre de Bruxelles, working with Ognyan Oreshkov.
 I received my PhD at the University of Hong Kong, supervised by [Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html). 
-
-My first name "Zi Xuan" is pronounced in English approximately as "zuh shwen."
 
 ## research
 [[arXiv]](http://arxiv.org/a/liu_z_19) [[Google scholar]](https://scholar.google.com/citations?user=cdxZIzQAAAAJ).
