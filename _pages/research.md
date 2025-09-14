@@ -17,7 +17,7 @@ We further investigate the advantage provided by quantum supermaps on bistochast
 
 **Research in progress** Understanding the limits of quantum information processing from foundational principles of quantum mechanics.
 
-[^chiribella2022quantum]:Quantum operations with indefinite time direction, Z Liu, G Chiribella, [arxiv: 2012.03859](https://arxiv.org/abs/2012.03859)
-[^guo2022experimental]: Experimental demonstration of input-output indefiniteness in a single quantum device, Y Guo, Z Liu, etc, [arxiv: 2012.03859](https://arxiv.org/abs/2012.03859)
-[^liu2023quantum]: Quantum communication through devices with indefinite input-output direction, [arxiv: 2012.03859](https://arxiv.org/abs/2012.03859)
-[^liu2025tsirelson]: Tsirelson bounds for quantum correlations with indefinite causal order, [arxiv: 2012.03859](https://arxiv.org/abs/2012.03859)
+[^chiribella2022quantum]:Quantum operations with indefinite time direction, **Z Liu**, G Chiribella, [arxiv: 2012.03859](https://arxiv.org/abs/2012.03859)
+[^guo2022experimental]: Experimental demonstration of input-output indefiniteness in a single quantum device, Y Guo, **Z Liu** et al., [arxiv: 2210.17046](https://arxiv.org/abs/2210.17046)
+[^liu2023quantum]: Quantum communication through devices with indefinite input-output direction, **Z Liu**, M Yang, G Chiribella, [arxiv: 2212.08265](https://arxiv.org/abs/2212.08265)
+[^liu2025tsirelson]: Tsirelson bounds for quantum correlations with indefinite causal order, **Z Liu**, G Chiribella, [arxiv: 2403.02749](https://arxiv.org/abs/2403.02749)
