@@ -26,14 +26,14 @@ I received my PhD at the University of Hong Kong, supervised by [Giulio Chiribel
 [[curriculum vitae]](/assets/pdf/cv.pdf) (last updated August 2025).
 
 My research interests include
-- quantum supermaps with indefinite causal structures,
+- quantum supermaps with indefinite causal structure,
 - quantum correlations with indefinite causal order,
-- physical principles,
-- limits of information processing from foundational principles of quantum mechanics
+- information-theoretic principles,
+- limits of information processing from foundational principles of quantum mechanics.
 
 For an overview of my research, visit [this page](/research).
 
-[[arXiv profile]](http://arxiv.org/a/liu_z_19) and [[Google scholar]](https://scholar.google.com/citations?user=cdxZIzQAAAAJ).
+[[arXiv profile]](http://arxiv.org/a/liu_z_19) and [[Google scholar]](https://scholar.google.com/citations?user={{ site.scholar_userid }}).
 
 
 ## contact
