@@ -23,13 +23,13 @@ I am a postdoctoral researcher at [Centre for Quantum Information and Communicat
 I received my PhD at the University of Hong Kong, supervised by [Giulio Chiribella](https://qici.weebly.com/giulio-chiribella.html). 
 
 <!-- My first name "Zi Xuan" is pronounced in English approximately as "zuh shwen." -->
-[[curriculum vitae]](/assets/pdf/cv.pdf) (last updated August 2025).
+[[curriculum vitae]](/assets/pdf/cv.pdf) (last updated December 2025).
 
 My research interests include
+- operational principles in general probabilistic theories,
+- limits of information processing from foundational principles of quantum mechanics,
 - quantum supermaps with indefinite causal structure,
-- quantum correlations with indefinite causal order,
-- information-theoretic principles,
-- limits of information processing from foundational principles of quantum mechanics.
+- quantum correlations with indefinite causal order.
 
 For an overview of my research, visit [this page](/research).
 
