@@ -1,0 +1,25 @@
+<aside class="sidebar" aria-label="Site navigation">
+  <div class="sidebar-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-name">{{ site.title }}</span>
+      <span class="brand-subtitle">{{ site.author.subtitle }}</span>
+    </a>
+
+    <nav class="page-nav" aria-label="Primary">
+      {% assign nav_pages = site.pages | where_exp: "item", "item.nav_order" | sort: "nav_order" %}
+      {% for node in nav_pages %}
+        <a href="{{ node.url | relative_url }}" {% if page.url == node.url %}aria-current="page"{% endif %}>{{ node.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <nav class="link-nav" aria-label="External links">
+      {% for link in site.links %}
+        {% assign link_url = link.url %}
+        {% assign link_prefix = link_url | slice: 0, 1 %}
+        <a href="{% if link_url contains '://' or link_url contains 'mailto:' %}{{ link_url }}{% elsif link_prefix == '/' %}{{ link_url | relative_url }}{% else %}{{ link_url }}{% endif %}">
+          <span>{{ link.name }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</aside>

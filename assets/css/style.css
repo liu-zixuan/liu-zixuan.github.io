@@ -1,0 +1,261 @@
+:root {
+  --paper: #fbfaf7;
+  --ink: #1f1b18;
+  --muted: #6f665d;
+  --rule: #ded7cd;
+  --accent: #6a3f23;
+  --accent-soft: #efe2d6;
+  --max-width: 43rem;
+  --sidebar-width: 17rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.content {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  padding: 2rem 1.2rem 4rem;
+}
+
+.mobile-header {
+  display: block;
+  padding-bottom: 1.4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.mobile-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.mobile-header a,
+.sidebar a {
+  text-decoration: none;
+}
+
+.site-title,
+.brand-name {
+  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3.4rem);
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 2.2rem;
+  font-size: 1.45rem;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  font-size: 1.12rem;
+}
+
+p,
+ul,
+ol,
+blockquote {
+  margin: 0 0 1.1rem;
+}
+
+.lede {
+  max-width: 36rem;
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+blockquote {
+  padding-left: 1rem;
+  color: var(--muted);
+  border-left: 3px solid var(--rule);
+}
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.post-list {
+  padding: 0;
+  list-style: none;
+}
+
+.post-list li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.post-list a {
+  display: block;
+  width: fit-content;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.post-list a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.post-list time {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.post-list p {
+  margin: 0.5rem 0 0;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 62rem) {
+  .site-shell {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  }
+
+  .sidebar {
+    display: block;
+    min-height: 100vh;
+    border-right: 1px solid var(--rule);
+  }
+
+  .sidebar-inner {
+    position: sticky;
+    top: 0;
+    padding: 2rem 1.5rem;
+  }
+
+  .brand {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .brand-name,
+  .brand-subtitle {
+    display: block;
+  }
+
+  .brand-subtitle {
+    margin-top: 0.45rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  .page-nav,
+  .link-nav {
+    display: grid;
+    gap: 0.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .page-nav {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .page-nav a,
+  .link-nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-height: 2rem;
+    color: var(--muted);
+    border-radius: 0.25rem;
+  }
+
+  .page-nav a:hover,
+  .link-nav a:hover,
+  .page-nav a[aria-current="page"] {
+    color: var(--ink);
+  }
+
+  .page-nav a[aria-current="page"] {
+    font-weight: 700;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .content {
+    margin: 0;
+    padding: 4.5rem 2.5rem 5rem;
+  }
+}

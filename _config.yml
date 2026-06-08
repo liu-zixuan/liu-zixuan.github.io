@@ -1,0 +1,38 @@
+title: "Zixuan Liu"
+description: "Zixuan's web pages."
+url: ""
+baseurl: ""
+
+author:
+  name: "Zixuan Liu"
+  subtitle: "Quantum information researcher."
+  email: "zixuanliu.cs@gmail.com"
+
+links:
+  - name: "Email"
+    url: "mailto:zixuanliu.cs@gmail.com"
+    icon: "email"
+  - name: "Scholar"
+    url: "https://scholar.google.com/citations?user=cdxZIzQAAAAJ"
+    icon: "scholar"
+  - name: "arXiv"
+    url: "http://arxiv.org/a/liu_z_19"
+    icon: "arxiv"
+  - name: "ORCID"
+    url: "https://orcid.org/0000-0002-4728-4149"
+    icon: "orcid"
+  - name: "GitHub"
+    url: "https://github.com/liu-zixuan"
+    icon: "github"
+  - name: "RSS"
+    url: "/feed.xml"
+    icon: "rss"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+markdown: kramdown
+permalink: pretty

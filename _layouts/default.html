@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="site-shell">
+      {% include sidebar.html %}
+      <main class="content" id="content">
+        <header class="mobile-header">
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <nav aria-label="Primary">
+            {% assign nav_pages = site.pages | where_exp: "item", "item.nav_order" | sort: "nav_order" %}
+            {% for node in nav_pages %}
+              <a href="{{ node.url | relative_url }}" {% if page.url == node.url %}aria-current="page"{% endif %}>{{ node.title }}</a>
+            {% endfor %}
+          </nav>
+        </header>
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
